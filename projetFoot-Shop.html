@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Foot-Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+  <link rel="stylesheet" href="projet.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Porfolio Demba</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Projets Foot-Shop</a>
+                </li> -->
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div class="banner">
+        <img src="https://media.istockphoto.com/id/1418501941/fr/photo/joueuses-de-soccer-tir-au-but.webp?b=1&s=170667a&w=0&k=20&c=Gxfn1VfYQeAm2xkMHOWl19_-Uwm_NWmZ5BS3Xmh18Ww=" alt="Bannière">
+        <div class="banner-content">
+          <h1>Foot-Shop</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="text-center w-50 d-block m-auto">
+
+      <h2 class=" container  text-center mt-5"> Description </h2>
+      <p> Foot-Shop est une application web de vente en ligne spécialisée dans les maillots de football, offrant aux
+        passionnés une expérience de shopping complète et sécurisée.
+      </p>
+
+      <img class="imageDeco2" src="images/Foot-shop.png" alt="" srcset="">
+
+
+    </section>
+
+    <h2 class="text-center">Fonctionnalités clés :</h2>
+
+
+
+    <section class="text-center w-50 d-block m-auto">
+
+      <h4 class=" container  text-center mt-5"> 1-Base de Données MongoDB :
+
+      </h4>
+
+
+      <p> Pour la base de données, j'ai utilisé MongoDb avec la création de deux collections: Les users et les produits. </br> Pour le panier, j'ai stocker les produits du panier dans le
+        localStorage du site. Ce qui permet d'économiser de la mémoire en bdd.
+      </p>
+      <img class="imageDeco2" src="image-Portfolio/foot-shop/architectureBdd.png" alt="" srcset="">
+
+      <img class="imageDeco2" src="image-Portfolio/foot-shop/mongo collections.png" alt="" srcset="">
+
+
+    </section>
+    <section class="text-center w-50 d-block m-auto">
+
+      <h4 class=" container  text-center mt-5"> 2-Système CRUD : </h4>
+
+      <p> Grâce à un backend basé sur Express et l'architecture MVC, foot-shop offre un système CRUD performant pour la
+        gestion des produits, des utilisateurs et des commandes. Les opérations de création, lecture, mise à jour et
+        suppression sont gérées de manière efficace pour une expérience utilisateur transparente.
+      </p>
+
+
+      <img class="imageDeco2" src="image-Portfolio/mvc.png" alt="" srcset="">
+
+
+
+    </section>
+
+
+    <section class="text-center w-50 d-block m-auto">
+
+      <h4 class=" container  text-center mt-5"> 3-Système de Paiement Stripe :
+
+      </h4>
+
+      <img class="imageDeco2 w-25" src="image-Portfolio/foot-shop/stripe.png" alt="" srcset="">
+      <p> Pour gérées les paiements, j'ai intégré Stripe qui est une librairie qui permet d'effectuer des paiements en
+        toute confiance et en toute sécurité. Voici une interface de ce que ça donne coté admin.
+      </p>
+      <img class="imageDeco2" src="image-Portfolio/foot-shop/stripe2.png" alt="" srcset="">
+
+
+
+
+
+
+    </section>
+
+    <section class="text-center w-50 d-block m-auto">
+
+      <h4 class=" container  text-center mt-5"> 4-Interface Réactive avec ReactJS : </h4>
+
+      <img class="imageDeco2 w-25" src="image-Portfolio/foot-shop/react.png" alt="" srcset="">
+
+      <p> Pour le coté front de mon application,j'ai utiliser ReactJS.
+        Il offre une interface utilisateur réactive et fluide. Grace à ça, Les utilisateurs peuvent naviguer facilement
+        entre les différents liens du site.
+
+      </p>
+
+
+    </section>
+
+    <section class="text-center w-50 d-block m-auto">
+
+      <h4 class="  text-center mt-5"> 5 - Gestion de Compte et Notifications: </h4>
+
+      <img class="imageDeco2" src="image-Portfolio/profil.png" alt="" srcset="">
+      <p> Les utilisateurs peuvent créer un compte, suivre leurs commandes, enregistrer leurs préférences et recevoir
+        des notifications sur les promotions, les nouvelles sorties et les mises à jour du site.
+        Pour cela, nous avons effectuer des requetes vers la base de données avec fetch coté ReactJS qui va en direction
+        du backend Express qui lui va faire les instructions demandés a la bdd
+      </p>
+
+
+    </section>
+
+    <section class="text-center w-50 d-block m-auto">
+
+      <h4 class=" container  text-center mt-5"> 6-Sécurité et Confidentialité : </h4>
+
+      <p> La sécurité est une priorité chez Foot-Shop. Les informations personnelles des utilisateurs, les transactions
+        et les données sensibles sont protégées par des protocoles de sécurité avancés avec https.
+      </p>
+
+
+    </section>
+
+    <p class="text-center w-50 d-block m-auto mt-5">
+      Foot-Shop vise à offrir une expérience de shopping en ligne immersive, alliant la passion pour le football à une
+      technologie de pointe. Grâce à notre base de données MongoDB, notre backend Express, l'architecture MVC, et
+      l'intégration Stripe, Foot-Shop garantit une plateforme sécurisée, efficace et conviviale pour tous les amateurs
+      de maillots de football.
+
+    </p>
+
+
+
+  </main>
+
+
+</body>
+
+</html>
